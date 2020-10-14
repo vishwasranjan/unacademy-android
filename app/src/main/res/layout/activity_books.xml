@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bookcardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardElevation="15dp"
+                app:cardBackgroundColor="#8ef4b1"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/bookimg"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/library" />
+
+                    <TextView
+                        android:id="@+id/bookauthor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="20dp"
+                        android:layout_toRightOf="@+id/bookimg"
+                        android:text="Book Author Name"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/bookname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bookauthor"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/bookimg"
+                        android:text="Book Title"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookcardview"
+        android:layout_margin="8dp"
+        android:background="@drawable/button"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:text="Read"
+
+        />
+
+
+</RelativeLayout>

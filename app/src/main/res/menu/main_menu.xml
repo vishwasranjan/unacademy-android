@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/freecourse"
+            android:icon="@drawable/free"
+            android:title="Free Course"
+
+            />
+        <item
+            android:id="@+id/premiumcourse"
+            android:icon="@drawable/premium"
+            android:title="Premium Course" />
+
+        <item
+            android:id="@+id/testseries"
+            android:icon="@drawable/exam"
+            android:title="Test Series" />
+        <item
+            android:id="@+id/liveclass"
+            android:icon="@drawable/liveclass"
+            android:title="Live Class" />
+        <item
+            android:id="@+id/chatwitheducator"
+            android:icon="@drawable/contact"
+            android:title="Chat with an educator" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/gearicon"
+            android:title="settings" />
+
+        <item
+            android:id="@+id/setti"
+            android:icon="@drawable/gearicon"
+            android:title="Settings">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/accounts"
+                        android:title="Accounts"
+                        android:visible="false" />
+                    <item
+                        android:id="@+id/faqs"
+                        android:title="Faqs"
+                        android:visible="false" />
+                    <item
+                        android:id="@+id/termsandcondition"
+                        android:title="Terms and Condition"
+                        android:visible="false" />
+                    <item
+                        android:id="@+id/legalterms"
+                        android:title="Legal terms"
+                        android:visible="false" />
+                    <item
+                        android:id="@+id/referandearn"
+                        android:title="Refer and Earn"
+                        android:visible="false" />
+                    <item
+                        android:id="@+id/logout"
+                        android:title="Logout"
+                        android:visible="false" />
+                </group>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/contactus"
+            android:icon="@drawable/contactinfo"
+            android:title="Contact us" />
+        <item android:title="Contact Us">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/contactemail"
+                        android:icon="@drawable/contactmail"
+                        android:title="Mail Us"
+                        android:visible="false" />
+                    <item
+                        android:id="@+id/contactnumber"
+                        android:icon="@drawable/contactus"
+                        android:title="Helpline Number"
+                        android:visible="false" />
+                </group>
+            </menu>
+
+        </item>
+
+
+    </group>
+
+</menu>

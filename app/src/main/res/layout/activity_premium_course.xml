@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11E9AE"
+    tools:context="com.exademy.sidenav.PremiumCourse">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/premium"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/offer_txt"
+        android:layout_marginBottom="50dp"
+        />
+        <TextView
+            android:id="@+id/offer_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kindly Pay Us to get access to PREMIUM FEATURES "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:background="@drawable/curved_recatngle_white_big"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_above="@+id/paymentbutton"
+            />
+
+
+
+    <Button
+        android:id="@+id/paymentbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay Us"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        />
+
+</RelativeLayout>

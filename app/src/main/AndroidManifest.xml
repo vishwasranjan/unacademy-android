@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.exademy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.VideoPlayer"
+            android:configChanges="orientation"></activity>
+        <activity android:name=".sidenav.Contact" />
+        <activity android:name=".sidenav.Logout" />
+        <activity android:name=".sidenav.ReferAndEarn" />
+        <activity android:name=".sidenav.LegalTerms" />
+        <activity android:name=".sidenav.TermsAndCondition" />
+        <activity android:name=".sidenav.Faqs" />
+        <activity android:name=".sidenav.Account" />
+        <activity android:name=".sidenav.ChatWithEducator" />
+        <activity android:name=".sidenav.LiveClasses" />
+        <activity android:name=".sidenav.TestSeries" />
+        <activity android:name=".sidenav.PremiumCourse" />
+        <activity android:name=".sidenav.FreeCourse" />
+        <activity android:name=".RecyclerViewAdapters.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".activity.GoalsActivity" />
+        <activity android:name=".activity.PostActivity" />
+        <activity android:name=".activity.SearchAutocompleteActivity" />
+        <activity android:name=".activity.UserProfileActivity" />
+        <activity android:name=".activity.PlusCourseActivity" />
+        <activity android:name=".activity.LearnMoreActivity" />
+        <activity android:name=".activity.EducatorProfileActivity" />
+        <activity android:name=".activity.TopicActivity" />
+        <activity android:name=".activity.SearchResultsActivity" />
+        <activity android:name=".activity.LoginRegisterActivity" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_ftvZYbz2djwEp2" />
+    </application>
+
+</manifest>
