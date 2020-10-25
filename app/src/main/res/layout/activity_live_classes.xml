@@ -12,166 +12,192 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/heading_rectangle"
-        android:text="Live Classes"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="15dp"
-        />
-
-       <androidx.cardview.widget.CardView
-           android:layout_width="180dp"
-           android:layout_height="180dp"
-           android:layout_marginTop="20dp"
-           app:cardBackgroundColor="#EAE6F5"
-           app:cardCornerRadius="35dp"
-           android:layout_gravity="center_horizontal"
-           >
-
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:background="@drawable/rectangle_trial"
-               android:layout_gravity="center_horizontal"
-               android:gravity="center"
-               android:text="Live Class Of\n P.K. Sir"
-               android:textColor="#000000"
-               android:textSize="19sp"
-               android:layout_marginTop="15dp"
-               />
-           <Button
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_marginLeft="40dp"
-               android:layout_gravity="bottom"
-               android:textColor="#ffffff"
-               android:textSize="15dp"
-               android:textStyle="bold"
-               android:layout_marginBottom="15dp"
-               android:background="@drawable/brown_button"
-               android:text="Join Now"
-               />
-
-       </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="20dp"
-        app:cardBackgroundColor="#EAE6F5"
-        app:cardCornerRadius="35dp"
-        android:layout_gravity="center_horizontal"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rectangle_trial"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:text="Live Class Of\n S.K. Sir"
-            android:textColor="#000000"
-            android:textSize="19sp"
-            android:layout_marginTop="15dp"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_gravity="bottom"
-            android:textColor="#ffffff"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/brown_button"
-            android:text="Join Now"
-            />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="20dp"
-        app:cardBackgroundColor="#EAE6F5"
-        app:cardCornerRadius="35dp"
-        android:layout_gravity="center_horizontal"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rectangle_trial"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:text="Live Class Of\n R.K. Sir"
-            android:textColor="#000000"
-            android:textSize="19sp"
-            android:layout_marginTop="15dp"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_gravity="bottom"
-            android:textColor="#ffffff"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/brown_button"
-            android:text="Join Now"
-            />
-
-    </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:layout_marginTop="20dp"
-            app:cardBackgroundColor="#EAE6F5"
-            app:cardCornerRadius="35dp"
-            android:layout_gravity="center_horizontal"
-            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rectangle_trial"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:text="Live Class Of\n N.T. Sir"
-                android:textColor="#000000"
-                android:textSize="19sp"
-                android:layout_marginTop="15dp"
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:layout_gravity="bottom"
-                android:textColor="#ffffff"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="15dp"
-                android:background="@drawable/brown_button"
-                android:text="Join Now"
-                />
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/heading_rectangle"
+                android:gravity="center"
+                android:text="Live Classes"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
-        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="35dp">
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rectangle_trial"
+                    android:gravity="center"
+                    android:text="Live Class Of\n P.K. Sir"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:gravity="center"
+                    android:text="Subject Name - \n Educator Name - \n Schedule - "
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/brown_button"
+                    android:text="Join Now"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#EAE6F5"
+                app:cardCornerRadius="35dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rectangle_trial"
+                    android:gravity="center"
+                    android:text="Live Class Of\n S.K. Sir"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:gravity="center"
+                    android:text="Subject Name - \n Educator Name - \n Schedule - "
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/brown_button"
+                    android:text="Join Now"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#EAE6F5"
+                app:cardCornerRadius="35dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rectangle_trial"
+                    android:gravity="center"
+                    android:text="Live Class Of\n R.K. Sir"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:gravity="center"
+                    android:text="Subject Name - \n Educator Name - \n Schedule - "
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/brown_button"
+                    android:text="Join Now"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#EAE6F5"
+                app:cardCornerRadius="35dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rectangle_trial"
+                    android:gravity="center"
+                    android:text="Live Class Of\n N.T. Sir"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:gravity="center"
+                    android:text="Subject Name - \n Educator Name - \n Schedule - "
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/brown_button"
+                    android:text="Join Now"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
     </ScrollView>
 
 </LinearLayout>

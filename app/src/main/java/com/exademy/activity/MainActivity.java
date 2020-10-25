@@ -1,5 +1,7 @@
 package com.exademy.activity;
 
+import android.app.AlertDialog;
+import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 
@@ -20,18 +22,16 @@ import com.exademy.sidenav.TestSeries;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -39,7 +39,6 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.Spinner;
@@ -51,8 +50,6 @@ import com.exademy.fragment.HomeFragment;
 import com.exademy.fragment.MyLibraryFragment;
 import com.exademy.fragment.PlusFragment;
 import com.exademy.fragment.ProfileFragment;
-
-import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, AdapterView.OnItemSelectedListener {
@@ -91,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         draweropener = (Button) findViewById(R.id.draweropener);
 
         nav_menu = navigationView.getMenu();
+
 
 
 // drawer code
@@ -231,7 +229,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.contactnumber:
                 startActivity(new Intent(getApplicationContext(), Contact.class));
                 return true;
-
+            case R.id.darkmode:
+                if (AppCompatDelegate.getDefaultNightMode()==AppCompatDelegate.MODE_NIGHT_YES)
+                {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    setTheme(R.style.DarkMode);
+                }
+                else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                    setTheme(R.style.DarkMode);
+                }
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                finish();
+                return true;
             default:
                 return false;
 

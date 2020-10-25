@@ -25,11 +25,11 @@
         <item
             android:id="@+id/chatwitheducator"
             android:icon="@drawable/contact"
-            android:title="Chat with an educator" />
+            android:title="Chat with an Educator" />
         <item
             android:id="@+id/settings"
             android:icon="@drawable/gearicon"
-            android:title="settings" />
+            android:title="Settings" />
 
         <item
             android:id="@+id/setti"
@@ -86,6 +86,10 @@
             </menu>
 
         </item>
+        <item
+            android:id="@+id/darkmode"
+            android:title="Dark Mode" />
+        <item android:title="Join State Group" />
 
 
     </group>
